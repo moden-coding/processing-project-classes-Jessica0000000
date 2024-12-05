@@ -10,7 +10,7 @@ public class AttackCircles {
     private PApplet canvas;
 
     public void Circle(int xPos, int yPos, PApplet c){
-
+        System.out.println();
         x = xPos;
         y = yPos;
         size = 50;

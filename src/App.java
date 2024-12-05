@@ -6,7 +6,7 @@ public class App extends PApplet{
     ArrayList<circles> circle;
     public static void main(String[] args)  {
         PApplet.main("App");
-        System.out.println();
+        
     }
 
     public void setup(){
