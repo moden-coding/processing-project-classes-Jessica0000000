@@ -1,7 +1,7 @@
 import processing.core.PApplet;
 import processing.core.*;
 
-public class AttackCircles {
+public class Circle {
 
     private int size;
     private int color;
@@ -9,16 +9,18 @@ public class AttackCircles {
     private int y;
     private PApplet canvas;
 
-    public void Circle(int xPos, int yPos, PApplet c){
-        System.out.println();
+    public Circle(int xPos, int yPos, PApplet c){
         x = xPos;
         y = yPos;
-        size = 50;
+        size = 100;
         canvas = c;
-        color = (0);
+        color = (255);
     }
     public void display(){
         canvas.fill(color);
         canvas.circle(x,y,size);
+    }
+    public void checkNumCircles(){
+        
     }
 }
