@@ -12,7 +12,7 @@ public class Circle {
     public Circle(int xPos, int yPos, PApplet c){
         x = xPos;
         y = yPos;
-        size = 100;
+        size = 60;
         canvas = c;
         color = (255);
     }
@@ -21,6 +21,6 @@ public class Circle {
         canvas.circle(x,y,size);
     }
     public void checkNumCircles(){
-        
+        if ()
     }
 }
