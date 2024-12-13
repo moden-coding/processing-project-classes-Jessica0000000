@@ -35,8 +35,4 @@ public class Circle {
         }
 
     }
-
-    public void checkNumCircles(){
-        for(Circle d: circles)
-    }
 }
