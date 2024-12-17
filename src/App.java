@@ -52,10 +52,29 @@ public class App extends PApplet {
                 sceneOne();// changing the background and transitioning to the next part of the game
             }
         }
+
         if (scene == 1) {
+
+            background(0, 35, 255); // ensures objects moving don't leave imprint on screen
+            fill(255);// figure out where x and y values are to create shapes
+            text("pos" + mouseX + "," + mouseY, 50, 199);
+            // creates monster, done partly by ChatGPT
+            // Calculate position and size
+            float monsterX = width / 2;
+            float monsterY = height / 2;
+            float monsterSize = min(width, height) / 2; // Quarter of the screen
+
+            // Draw body (circle)
+            fill(200, 100, 255); // Light purple
+            ellipse(monsterX, monsterY - 50, monsterSize, monsterSize);
+            fill(0);
+            ellipse(294, 215, 70, 40);
+            ellipse(400, 215, 70, 40);
+
             for (Sword s : swords) {
                 s.displaySword();
             } // when the scene changes make the swords appear
+
         }
     }
 
@@ -70,9 +89,13 @@ public class App extends PApplet {
             Sword s = new Sword(x, y, yTwo, this);
             swords.add(s);
             attackStat--;
-        } // creates number of swords equal to the attackStat
-        System.out.println(attackStat);
+        }
 
+        // creates number of swords equal to the attackStat
+
+        // int times=0;
+        // times++;
+        // System.out.println("gone" +times);
     }
 
     public void mousePressed() {
