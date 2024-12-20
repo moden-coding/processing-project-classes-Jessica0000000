@@ -129,7 +129,8 @@ public class App extends PApplet {
 
     public void sceneOne() {
         background(0, 35, 255);// changing the background for the next part of the game
-        score = 400 - attackStat;
+        score = 400 - attackStat;//score is equal to the number of circles you popped
+        //below is code that I unfortunately was not able to implement in my final game because I ran out of time
         swords = new ArrayList<>();// creating new array list for swords
         int attack;// how many swords should spawn to attack the monster
         attack = attackStat;
@@ -141,8 +142,7 @@ public class App extends PApplet {
             swords.add(s);
             attack--;
         }
-        System.out.println(attackStat);// attackStat is the number of circles removed so it acts as the highscore here
-
+        System.out.println("attackStat is " + attackStat);// attackStat is the number of circles removed so it acts as the highscore here
         // creates number of swords equal to the attackStat
         //I wasn't able to get to displaying the swords
     }
